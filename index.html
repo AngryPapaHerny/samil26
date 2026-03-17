@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼일고 AI 챗봇 쇼케이스</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-anim">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <header class="glass-nav">
+        <div class="container">
+            <h1>삼일고 RAG 챗봇 쇼케이스</h1>
+            <p>학생들이 Dify로 직접 제작한 인공지능 앱 모음입니다.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card-grid">
+            <!-- App Card 1 -->
+            <article class="glass-card" data-app-url="https://udify.app/chatbot/Hf4FuAC8TRTkOSkE">
+                <div class="card-image bg-gradient-1">
+                    <span class="bot-icon">🤖</span>
+                </div>
+                <div class="card-content">
+                    <span class="badge">Movie</span>
+                    <h2>영화 추천 AI 서비스</h2>
+                    <p>영화 데이터를 기반으로 사용자가 대화를 통해 원하는 영화를
+                        추천받을 수 있는 개인용 AI 챗봇</p>
+                    <div class="card-footer">
+                        <span class="author">Made by 한민,현서</span>
+                        <button class="launch-btn">실행하기 <span class="arrow">→</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- App Card 2 (Placeholder example) -->
+            <article class="glass-card" data-app-url="https://udify.app/chatbot/EvOOiTvi0LrTUWiW">
+                <div class="card-image bg-gradient-2">
+                    <span class="bot-icon">✨</span>
+                </div>
+                <div class="card-content">
+                    <span class="badge">Creative</span>
+                    <h2>학술 논문 리라이팅</h2>
+                    <p>학술적 관점에서 심화 탐구 방향을 제시하는 비판적 에이전트.</p>
+                    <div class="card-footer">
+                        <span class="author">Made by 재겸</span>
+                        <button class="launch-btn">실행하기 <span class="arrow">→</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- App Card 3 (Placeholder example) -->
+            <article class="glass-card" data-app-url="https://udify.app/chat/9DQAkk9K4sCKzrwD">
+                <div class="card-image bg-gradient-3">
+                    <span class="bot-icon">📚</span>
+                </div>
+                <div class="card-content">
+                    <span class="badge">chatbot</span>
+                    <h2>심리 케어 AI</h2>
+                    <p>긍정적 관점 전환을 돕는 유머 기반 심리 케어 서비스.</p>
+                    <div class="card-footer">
+                        <span class="author">Made by 예지</span>
+                        <button class="launch-btn">실행하기 <span class="arrow">→</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- App Card 4 -->
+            <article class="glass-card" data-app-url="https://udify.app/workflow/AhYTxYhktw3s14Fm">
+                <div class="card-image bg-gradient-1">
+                    <span class="bot-icon">⚙️</span>
+                </div>
+                <div class="card-content">
+                    <span class="badge">Workflow</span>
+                    <h2>AI 앱 4 (워크플로우)</h2>
+                    <p>입력된 데이터를 바탕으로 자동화된 작업을 수행하는 워크플로우 에이전트.</p>
+                    <div class="card-footer">
+                        <span class="author">Made by 지후,용호</span>
+                        <button class="launch-btn">실행하기 <span class="arrow">→</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- App Card 5 -->
+            <article class="glass-card" data-app-url="https://udify.app/chat/pzlp1mrXxIMC5Z0z">
+                <div class="card-image bg-gradient-2">
+                    <span class="bot-icon">💬</span>
+                </div>
+                <div class="card-content">
+                    <span class="badge">Chatbot</span>
+                    <h2>AI 앱 5 (챗봇)</h2>
+                    <p>사용자의 질문에 답변하며 상호작용하는 맞춤형 인공지능 챗봇 서비스.</p>
+                    <div class="card-footer">
+                        <span class="author">Made by 다은</span>
+                        <button class="launch-btn">실행하기 <span class="arrow">→</span></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Modal Overlay for Dify App -->
+    <div id="app-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h3 id="modal-app-title">AI 앱 실행</h3>
+                <button id="close-modal" class="close-btn" aria-label="닫기">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="loader">로딩중...</div>
+                <iframe id="dify-iframe" src="" style="width: 100%; height: 100%; min-height: 700px" frameborder="0"
+                    allow="microphone" title="Dify App">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
